@@ -125,7 +125,7 @@ Barbeau, D. (2025). Classical Unification of Gravity and Electromagnetism via Sy
 
 Barbeau, D. (2025). REfractive Foundation of Relativity and Mechanics (REFORM v3). rxiverse:2508.0021. https://rxiverse.org/abs/2508.0021  
 
-Barbeau, D. (2025). The ZigZag Eternal Universe System (ZEUS v3). rxiverse:2508.0003. https://rxiverse.org/abs/2508.0003  
+Barbeau, D. (2025). The ZigZag Eternal Universe System (ZEUS v3). viXra::2504.0033. https://ai.vixra.org/abs/2504.0033   
 
 Barbeau, D. (2025). Experimental Validation of the Atomic Statistical Hypothesis: Resolving Quantization Through Continuous Waves (ASH). viXra:2507.0123. https://ai.vixra.org/abs/2507.0123  
 
