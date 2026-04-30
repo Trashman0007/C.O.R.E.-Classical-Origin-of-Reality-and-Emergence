@@ -1,0 +1,35 @@
+{
+  "framework": "C.O.R.E. v3",
+  "version": "3.0 (Corrected Dispersion)",
+  "author": "David Barbeau",
+  "date": "2026-04-29T14:45:41.605811",
+  "binary_parameters": {
+    "M_tot_solar": 30.0,
+    "mu_solar": 10.0,
+    "r_obs_Mpc": 324.04406999351914,
+    "f_start_Hz": 30.0,
+    "f_isco_Hz": 146.5290044785413
+  },
+  "dispersion_parameters": {
+    "enabled": true,
+    "D_g_physical": 1e-20,
+    "D_g_simulation": 1e-15,
+    "formula": "\u0394\u03a6(f) = D_g * (2\u03c0f/c)^2 * (r_obs/c)"
+  },
+  "simulation": {
+    "t_max_s": 1.0,
+    "num_points": 50000,
+    "t_merger_s": 0.11964239284785697,
+    "peak_amplitude": 9.847088516851367e-22
+  },
+  "core_sections": {
+    "section_3": "Quadratic dispersion test (White et al. 2026) - FIXED",
+    "section_4": "2D transverse projector \u2192 tensor polarizations",
+    "section_5": "VSS orbital decay",
+    "section_6": "Frequency-dependent ringdown damping"
+  },
+  "files_generated": {
+    "csv_data": "core_gw_waveform_v3_20260429_144541.csv",
+    "json_metadata": "core_gw_metadata_v3_20260429_144541.json"
+  }
+}
