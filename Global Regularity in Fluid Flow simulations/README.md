@@ -4,9 +4,9 @@
 
 This code implements a 256³ 3D fluid solver on GPU (CuPy) that solves the **ray-equation form** of the CUGE/REFORM model:
 
-\[
+$$
 \frac{D\mathbf{v}}{Dt} = c^2 \frac{\nabla n}{n} - \frac{\dot{n}}{n} \mathbf{v} + \nu \nabla^2 \mathbf{v}, \quad n = 1 + \beta \frac{|\mathbf{v}|^2}{c^2}
-\]
+$$
 
 It demonstrates **real-world global regularity** through natural kinematic suppression and quartic dissipation (Vacuum Stress Storage) without ad-hoc viscosity or artificial damping.
 
