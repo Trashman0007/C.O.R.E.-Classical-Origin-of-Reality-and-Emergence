@@ -37,8 +37,8 @@ No intrinsic photons during propagation. Quantization emerges from material thre
 
 ### **Postulate 4: CMB as Vacuum Shielding Stress (VSS) Energy**  
 The observed CMB blackbody (\(T \approx 2.7255~\rm K\)) arises from steady-state reprocessing of starlight energy stored as vacuum strain in the responsive medium. Per the Gelbard Symmetry (VSS), the energy density stored in the strained vacuum  
-\[  
-u_{\rm vac} = \frac{1}{2}\varepsilon_0 c^2 |\nabla\Phi|^2 \quad [\rm J\,m^{-3}] \tag{8.1}  
+\[
+u_{\rm vac}(\mathbf{r})=\frac{|\nabla\Phi(\mathbf{r})|^2}{8\pi G}\quad[\rm J\,m^{-3}]\tag{8.1}
 \]  
 is thermalized isotropically through wave-electron interactions in the cosmic density field. Dimensional verification: \(\varepsilon_0\) (\(\rm F\,m^{-1}\)), \(c^2\) (\(\rm m^2\,s^{-2}\)), \(|\nabla\Phi|\) (\(\rm m\,s^{-2}\)) → \(\rm J\,m^{-3}\) ✓.
 
@@ -392,7 +392,7 @@ Miroslaw Wilczak kindly introduced this insight to the author.
 
 In the CUGE responsive vacuum the same partitioning is realised through symmetric variations in \(\varepsilon(r)\) and \(\mu(r)\). The vacuum strain energy density
 \[
-u_{\rm vac}(r) = \frac{1}{2} \varepsilon_0 c^2 |\nabla \Phi(r)|^2 \quad [\rm J\,m^{-3}] \tag{7.4}
+u_{\rm vac}(r) = \frac{|\nabla\Phi(r)|^2}{8\pi G} \quad [\rm J\,m^{-3}] \tag{7.4}
 \]
 acts as the physical realisation of the shielding stress and provides the additional gravitating source term:
 \[
@@ -446,8 +446,7 @@ A true blackbody requires a physical medium that can absorb energy *and* re-emit
 ### 8.2 Vacuum Strain Energy Density
 Mass induces the symmetric response (CUGE)
 \[
-\varepsilon(r)=\varepsilon_0\left(1+\frac{\Phi(r)}{2c^2}\right),\qquad
-\mu(r)=\mu_0\left(1+\frac{\Phi(r)}{2c^2}\right)\tag{8.1}
+u_{\rm vac}(\mathbf{r})=\frac{|\nabla\Phi(\mathbf{r})|^2}{8\pi G}\quad[\rm J\,m^{-3}]\tag{8.1}
 \]
 (\(\Phi\) in m² s⁻², \(c=299\,792\,458\) m s⁻¹ exact). The refractive index remains strictly dimensionless:
 \[
@@ -455,7 +454,7 @@ n(r)\equiv\sqrt{\varepsilon_r(r)\mu_r(r)}\approx1+\frac{\Phi(r)}{2c^2}.\tag{8.2}
 \]
 The stored vacuum strain energy density is
 \[
-u_{\rm vac}(\mathbf{r})=\frac12\varepsilon_0 c^2|\nabla\Phi(\mathbf{r})|^2\quad[\rm J\,m^{-3}].\tag{8.3}
+u_{\rm vac}(\mathbf{r})=\frac{|\nabla\Phi(\mathbf{r})|^2}{8\pi G}\quad[\rm J\,m^{-3}].\tag{8.3}
 \]
 SI audit: \(\varepsilon_0\) (kg⁻¹ m⁻³ s⁴ A²), \(c^2\) (m² s⁻²), \(|\nabla\Phi|\) (m s⁻²) → kg m⁻¹ s⁻² = J m⁻³ ✓.
 
@@ -540,7 +539,7 @@ with lensing kernel
 
 | Quantity              | Expression                                      | Units (SI base)          | Check |
 |-----------------------|-------------------------------------------------|--------------------------|-------|
-| \(u_{\rm vac}\)       | \(\frac12\varepsilon_0 c^2\|\nabla\Phi\|^2\)     | kg m⁻¹ s⁻²             | ✓     |
+| \(u_{\rm vac}\)       | \(\frac{|\nabla\Phi|^2}{8\pi G}\)			     | kg m⁻¹ s⁻²             | ✓     |
 | \(\delta_{\rm VSS}\)  | fractional                                      | dimensionless            | ✓     |
 | \(\frac{\Delta T}{T}\) | \(\int W\,\delta_{\rm VSS}\,dr\)               | dimensionless            | ✓     |
 | \(C_\ell^{TT,EE,TE,BB}\) | all Limber integrals                          | dimensionless            | ✓     |
@@ -618,5 +617,3 @@ All quantities use SI base units only; \(n_{\rm opt}\) is strictly dimensionless
 © 2025 David Barbeau | david@bigbadaboom.ca
 
 ---
-
-
