@@ -3,18 +3,25 @@
 **C.O.R.E.** is a singularity-free physics framework unified by the vacuum strain energy density equation
 
 $$
-u_{\rm vac} = \frac{1}{2} \varepsilon_0 c^2 |\nabla \Phi|^2
+u_{\rm vac} = \frac{|\nabla\Phi|^2}{8\pi G}
 $$
 
-where $\Phi$ is the gravitational potential (units: m² s⁻²), $\varepsilon_0$ is vacuum permittivity, and $c = 299\,792\,458$ m s⁻¹ (exact, invariant locally). This yields energy density in SI base units kg m⁻¹ s⁻².
+where $\Phi$ is the gravitational potential magnitude (units: m² s⁻²) and \(G\) is Newton’s gravitational constant. This expression yields energy density in strict SI base units (kg m⁻¹ s⁻²) and correctly sources the Vacuum Shielding Stress (VSS) contribution to effective mass in the Poisson equation.
 
 The refractive index is strictly dimensionless:
 
 $$
-n(\mathbf{r},t) \equiv \sqrt{\varepsilon_r(\mathbf{r},t) \mu_r(\mathbf{r},t)} \approx 1 + \frac{\Phi(\mathbf{r},t)}{2c^2}. 
+n(r,t) \equiv \sqrt{\varepsilon_r(r,t)\mu_r(r,t)} \approx 1 + \frac{\Phi(r,t)}{2c^2}
 $$
 
-Coordinate speed varies as $c_{\rm coord}(\mathbf{r}) = c / n(\mathbf{r})$; locally measured $c$ remains invariant via clock/ruler co-scaling (ASH).
+(dimensionless by construction)
+
+Coordinate speed of light:
+\[
+c_{\rm coord}(r) = \frac{c}{n(r)}
+\]
+
+Local measured speed of light remains exactly \( c = 299\,792\,458 \) m s⁻¹ everywhere due to atomic clock and ruler co-scaling (ASH).
 
 ## **Unlike GR/ΛCDM — burdened by singularities, postulates, abstraction, invisible entities, and free parameters — C.O.R.E. requires none:**
 
@@ -43,17 +50,9 @@ Coordinate speed varies as $c_{\rm coord}(\mathbf{r}) = c / n(\mathbf{r})$; loca
 
 All results derive from Eq. (1.1) applied consistently across domains — no free parameters, no singularities, no dark entities.
 
-**Core papers**  
-- [CUGE](https://ai.vixra.org/abs/2507.0112)  
-- [REFORM](https://rxiverse.org/abs/2508.0021)
-- [The Atomic Statistical Hypothesis](https://ai.vixra.org/abs/2507.0055)  
-- [ZEUS](https://ai.vixra.org/abs/2504.0033)  
-- [Navier–Stokes resolution](https://rxiverse.org/abs/2510.0006)
-- [Unprecedented Stability in Gravitational N-Body Simulations](https://rxiverse.org/abs/2509.0031) 
-
 I created this repository to openly share all simulation scripts, raw n-body data, and numerical results, and I invite independent scrutiny, replication, and critique.
 
-For the most up-to-date papers revisions visit my website: https://www.bigbadaboom.ca
+For the most up-to-date papers revisions visit my website: https://www.bigbadaboom.ca , most papers are also published on arxiv.
 I will also upload the updated papers here in md format, it is somehow math heavy and unfortunately github does not make use of modern mathjax delimiters so those documents will be best viewed with md readers like [NoteDiscovery](https://github.com/gamosoft/NoteDiscovery) 
 
 
