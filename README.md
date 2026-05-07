@@ -17,9 +17,9 @@ $$
 (dimensionless by construction)
 
 Coordinate speed of light:
-\[
+$$
 c_{\rm coord}(r) = \frac{c}{n(r)}
-\]
+$$
 
 Local measured speed of light remains exactly \( c = 299\,792\,458 \) m s⁻¹ everywhere due to atomic clock and ruler co-scaling (ASH).
 
