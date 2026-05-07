@@ -17,6 +17,7 @@ $$
 (dimensionless by construction)
 
 Coordinate speed of light:
+
 $$
 c_{\rm coord}(r) = \frac{c}{n(r)}
 $$
