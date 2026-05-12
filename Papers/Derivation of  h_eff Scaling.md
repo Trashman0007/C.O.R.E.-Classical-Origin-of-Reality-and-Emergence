@@ -132,17 +132,7 @@ Thus \( h_{\rm eff}(r) \propto 1/\varepsilon(r) \) for photoelectric detection (
 
 ---
 
-### 4. Resolution of the Original Inconsistency
-
-- The erroneous Poynting step used the non-CUGE form \( I = \frac12 c \varepsilon E_0^2 \) (valid only for fixed \( \mu = \mu_0 \)), leading to incorrect \( E_0 \propto 1/\sqrt{\varepsilon} \). True CUGE (constant \( Z_0 \)) eliminates this suppression.
-- Internal transitions (universal \( h \)) and external photoelectric detection were conflated.
-- The algebraic step was written incorrectly (\( \times \) instead of division).
-
-With the corrections, local \( c \)-invariance is restored from first principles, photoelectric \( h_{\rm eff} \) scales as \( 1/\varepsilon(r) \), and every prior C.O.R.E. result (redshift, half-effect, CMB, Bell correlations, etc.) remains fully intact.
-
----
-
-### 5. Summary of Scalings
+### 4. Summary of Scalings
 
 | Regime                  | Scaling of \( \varepsilon(r) \) | \( h \)          | Measured \( c_{\rm local} \) | Notes |
 |-------------------------|---------------------------------|------------------|------------------------------|-------|
