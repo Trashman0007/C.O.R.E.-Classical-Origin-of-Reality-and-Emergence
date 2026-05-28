@@ -84,7 +84,7 @@ $$
 Writing $\hat{\mathbf{t}} = d\mathbf{r}/ds$ as the unit tangent, this is:
 
 $$
-\frac{d}{ds}(n\,\hat{\mathbf{t}}) = \nabla n. \tag{1}
+\frac{d}{ds}(n\,\hat{\mathbf{t}}) = \nabla n.
 $$
 
 This is the **ray equation** — a vector force law in flat space where the "force" is $\nabla n$. No curvature, no metric. Just a gradient deflecting rays.
@@ -112,7 +112,7 @@ $$
 After simplification (keeping terms to first order in $\Phi/c^2$):
 
 $$
-\ddot{\mathbf{r}} = \frac{c^2}{n}\nabla n - \frac{\dot{n}}{n}\mathbf{v}. \tag{2}
+\ddot{\mathbf{r}} = \frac{c^2}{n}\nabla n - \frac{\dot{n}}{n}\mathbf{v}.
 $$
 
 The first term is the gradient "force" perpendicular to the ray direction. The second term accounts for time-varying $n$ along the path (relevant for dynamic potentials). For static fields, $\dot{n} = 0$ and only the gradient remains.
@@ -180,7 +180,7 @@ $$
 Thus:
 
 $$
-\ddot{\mathbf{r}} = (\ddot{r} - r\dot{\theta}^2)\hat{\mathbf{e}}_r + (r\ddot{\theta} + 2\dot{r}\dot{\theta})\hat{\mathbf{e}}_\theta. \tag{3}
+\ddot{\mathbf{r}} = (\ddot{r} - r\dot{\theta}^2)\hat{\mathbf{e}}_r + (r\ddot{\theta} + 2\dot{r}\dot{\theta})\hat{\mathbf{e}}_\theta.
 $$
 
 The terms $-r\dot{\theta}^2$ and $2\dot{r}\dot{\theta}$ are **not** gravitational — they exist even for a free particle in flat polar coordinates. They arise entirely from the rotation of the basis vectors as the particle moves through angle $\theta$.
@@ -194,13 +194,13 @@ $$
 The ray equation (1) in polar form gives, for the radial component:
 
 $$
-\ddot{r} - r\dot{\theta}^2 = \frac{c^2}{n}\,n'(r). \tag{4a}
+\ddot{r} - r\dot{\theta}^2 = \frac{c^2}{n}\,n'(r).
 $$
 
 For the azimuthal component, angular momentum conservation from the ray equation's symmetry gives:
 
 $$
-\frac{d}{dt}(n r^2\dot{\theta}) = 0 \implies n r^2\dot{\theta} = h = \text{constant}. \tag{4b}
+\frac{d}{dt}(n r^2\dot{\theta}) = 0 \implies n r^2\dot{\theta} = h = \text{constant}.
 $$
 
 Equations (3)–(4) constitute the complete dynamical system. Comparing with GR's isotropic Schwarzschild geodesics in polar coordinates:
@@ -397,10 +397,10 @@ This has been measured to $0.002\%$ precision by Cassini spacecraft tracking, co
 From (4a)–(4b), the complete system for a light ray or massive particle in the refractive medium is:
 
 $$
-\ddot{r} - r\dot{\theta}^2 = \frac{c^2}{n}\frac{dn}{dr}, \tag{5a}
+\ddot{r} - r\dot{\theta}^2 = \frac{c^2}{n}\frac{dn}{dr},
 $$
 $$
-nr^2\dot{\theta} = h. \tag{5b}
+nr^2\dot{\theta} = h.
 $$
 
 For bound orbits of massive bodies, the same ray equation applies if we identify $h$ as specific angular momentum and include the Newtonian potential in the effective force. The refractive correction modifies the radial acceleration:
@@ -448,7 +448,7 @@ $$
 The refractive correction to the force term, expanded to first order in $1/c^2$, contributes an additional term proportional to $u^2$. The complete equation is:
 
 $$
-\frac{d^2u}{d\theta^2} + u = \frac{GM}{h^2} + \underbrace{\frac{3GM}{c^2}u^2}_{\text{refractive correction}}. \tag{6}
+\frac{d^2u}{d\theta^2} + u = \frac{GM}{h^2} + \underbrace{\frac{3GM}{c^2}u^2}_{\text{refractive correction}}.
 $$
 
 The coefficient 3 arises from the combination of: (a) the Newtonian term $GM/h^2$ providing the unperturbed solution, (b) the refractive index gradient modifying both the effective potential and the angular momentum conservation, and (c) the trigonometric projection of radial acceleration onto polar basis vectors.
@@ -506,7 +506,7 @@ $$
 Using $h^2 = GMa(1-e^2)$:
 
 $$
-\boxed{\Delta\phi = \frac{6\pi GM}{c^2 a(1-e^2)}}. \tag{7}
+\boxed{\Delta\phi = \frac{6\pi GM}{c^2 a(1-e^2)}}.
 $$
 
 This is the GR prediction for Mercury: 43 arcseconds per century. It emerges entirely from trigonometric projection of the ray equation onto polar coordinates, with the $u^2$ correction term coming from the first-order expansion of $n(u)$. No Christoffel symbols, no Riemann tensor — just $\cos\theta$, $\sin\theta$, and the resonant response of a harmonic oscillator to a secular forcing term.
@@ -552,10 +552,10 @@ $$
 where $Q_+ = (Q_{xx}-Q_{yy})/2$ and $Q_\times = Q_{xy}$. The detector measures:
 
 $$
-h_+ \propto \iint \delta n(\rho,\phi,t)\cos(2\phi)\,\rho\,d\rho\,d\phi, \tag{8a}
+h_+ \propto \iint \delta n(\rho,\phi,t)\cos(2\phi)\,\rho\,d\rho\,d\phi,
 $$
 $$
-h_\times \propto \iint \delta n(\rho,\phi,t)\sin(2\phi)\,\rho\,d\rho\,d\phi. \tag{8b}
+h_\times \propto \iint \delta n(\rho,\phi,t)\sin(2\phi)\,\rho\,d\rho\,d\phi.
 $$
 
 ### 8.3 Interpretation: Polarizations as Measurement Projections
