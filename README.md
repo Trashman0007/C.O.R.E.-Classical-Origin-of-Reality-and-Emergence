@@ -25,7 +25,7 @@ $$
 Local measured speed of light remains exactly \( c = 299\,792\,458 \) m s⁻¹ everywhere due to atomic clock and ruler co-scaling (ASH).
 
 **Read this first**  
-**[Tensors as Coordinate Encoding of Geometric Force](Tensors%20as%20Coordinate%20Encoding%20of%20Geometric%20Force.md)**  
+**[Tensors as Coordinate Encoding of Geometric Force](Tensors%20as%20Coordinate%20Encoding%20of%20Geometric%20Force(github).md)**  
 The central result. All weak-field GR predictions recovered untuned from the single invariant $Z_0 = \sqrt{\mu_0/\varepsilon_0}$ .
 
 ---
