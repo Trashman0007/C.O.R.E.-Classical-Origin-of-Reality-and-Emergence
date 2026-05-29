@@ -2,7 +2,7 @@
 
 **David Barbeau, Independent Researcher**  
 david@bigbadaboom.ca | [www.bigbadaboom.ca](https://www.bigbadaboom.ca)  
-May 28, 2026 **Version: 1**
+May 28, 2026 **Revision: 2: May 29, 2026**
 
 **License:** arXiv.org perpetual, non-exclusive license 1.0. Non-commercial use (e.g., education, videos) encouraged with attribution to David Barbeau. Commercial use requires permission—contact @stoic_david on X.  
 ©2025 David Barbeau | david@bigbadaboom.ca | arXiv perpetual license 1.0 (non-commercial)
@@ -21,7 +21,7 @@ The derivation proceeds from a single invariant: vacuum impedance $Z_0 = \sqrt{\
 
 - **J1 (Theorem 1):** The Christoffel symbols $\Gamma^i_{jk}$ decompose into two terms: $(\nabla n/n)$ projected onto an orthonormal basis, plus kinematic basis-rotation contributions that exist in *any* curvilinear coordinate system. The "connection" is not curvature — it is the gradient force written in a non-Cartesian frame.
 
-- **J2 (Proposition 1):** Light bending $\theta = 4GM/(c^2 b)$ arises from the path integral of the transverse gradient component $\partial n/\partial x$ along the unperturbed ray, with direction cosine $\cos\alpha = x/r$ extracting the perpendicular projection. The factor-of-2 enhancement over Newtonian deflection comes from symmetric $\varepsilon$ and $\mu$ scaling, not spatial curvature.
+- **J2 (Proposition 1):** Light bending $\theta = 4GM/(c^2 b)$ arises from the effective refractive index for light $n_{\rm eff}(r) = 1 + 2GM/(c^2 r)$ and the path integral of the transverse gradient component along the unperturbed ray, with direction cosine $\cos\alpha = x/r$ extracting the perpendicular projection. The doubling relative to Newtonian deflection comes from dual-field equipartition and wavefront integration.
 
 - **J3 (Proposition 2):** Perihelion precession $\Delta\phi = 6\pi GM/[c^2 a(1-e^2)]$ emerges from the polar-coordinate ray equation via the Binet substitution $u = 1/r$, where the $u^2$ correction term is the first-order expansion of $n(u)$ projected onto radial and azimuthal acceleration components. The coefficient 3 arises naturally, not from tensor geometry.
 
@@ -33,35 +33,25 @@ The derivation proceeds from a single invariant: vacuum impedance $Z_0 = \sqrt{\
 
 The starting point is the requirement that vacuum impedance remains globally constant:
 
-$$
-Z_0 = \sqrt{\frac{\mu(r)}{\varepsilon(r)}} = \text{constant}.
-$$
+$$ Z_0 = \sqrt{\frac{\mu(r)}{\varepsilon(r)}} = \text{constant}. $$
 
-Under a gravitational potential $\Phi(r)$, the vacuum responds by adjusting both permittivity and permeability symmetrically. This symmetry is forced by impedance invariance: if only one adjusted, $Z_0$ would change. The unique solution preserving $Z_0$ to first order in $\Phi/c^2$ is:
+Under a gravitational potential, the vacuum responds by adjusting both permittivity and permeability symmetrically. This symmetry is forced by impedance invariance: if only one adjusted, $Z_0$ would change. Adopting a positive-magnitude convention for the local field potential where $\Phi(r) = | -GM/r | = GM/r$, the unique solution preserving $Z_0$ to first order in $\Phi/c^2$ is:
 
-$$
-\varepsilon(r) = \varepsilon_0\left(1 + \frac{\Phi(r)}{2c^2}\right), \quad \mu(r) = \mu_0\left(1 + \frac{\Phi(r)}{2c^2}\right).
-$$
+$$ \varepsilon(r) = \varepsilon_0\left(1 + \frac{\Phi(r)}{2c^2}\right), \quad \mu(r) = \mu_0\left(1 + \frac{\Phi(r)}{2c^2}\right). $$
 
-The symmetric factor of $1/2$ is not chosen — it follows from the constraint that both parameters respond equally while maintaining constant ratio. The refractive index is:
+The symmetric factor of $1/2$ is not chosen — it follows from the constraint that both parameters respond equally while maintaining a constant ratio. The refractive index is:
 
-$$
-n(r) = \sqrt{\frac{\varepsilon(r)\mu(r)}{\varepsilon_0\mu_0}} = 1 + \frac{\Phi(r)}{2c^2} + O\left(\frac{\Phi^2}{c^4}\right).
-$$
+$$ n(r) = \sqrt{\frac{\varepsilon(r)\mu(r)}{\varepsilon_0\mu_0}} = 1 + \frac{\Phi(r)}{2c^2} + O\left(\frac{\Phi^2}{c^4}\right). $$
 
-For a point mass $M$, $\Phi(r) = -GM/r$, giving:
+For a point mass $M$, this directly yields:
 
-$$
-n(r) = 1 - \frac{GM}{2c^2 r}.
-$$
+$$ n(r) = 1 + \frac{GM}{2c^2 r}. $$
 
-Note that $n > 1$ near the mass because $\Phi < 0$. Light slows in the medium (coordinate speed $v_{coord} = c/n$) and bends toward higher $n$, i.e., toward the mass. This is ordinary optics — no geometry postulated.
+Note that $n > 1$ near the mass. Light slows in the medium (coordinate speed $v_{\rm coord} = c/n$) and bends toward higher $n$, i.e., toward the mass. This is ordinary optics — no geometry postulated.
 
-**Local $c$ preservation.** Atomic transition energies scale as $E \propto 1/\varepsilon^2$. The effective Planck constant scales as $h_{eff} \propto \varepsilon$. Thus frequency $\nu = E/h_{eff} \propto 1/\varepsilon$. Bohr radius (ruler) scales as $\lambda \propto \varepsilon$. The local measured speed is:
+**Local $c$ preservation.** Atomic transition energies scale as $E \propto 1/\varepsilon^2$. The effective Planck constant scales as $h_{\rm eff} \propto \varepsilon$. Thus frequency $\nu = E/h_{\rm eff} \propto 1/\varepsilon$. Bohr radius (ruler) scales as $\lambda \propto \varepsilon$. The local measured speed is:
 
-$$
-c_{local} = \lambda\nu \propto \varepsilon \cdot \frac{1}{\varepsilon} = 1,
-$$
+$$ c_{\rm local} = \lambda\nu \propto \varepsilon \cdot \frac{1}{\varepsilon} = 1, $$
 
 exactly. Clocks and rulers co-scale with the medium, so any local measurement of $c$ returns $299792458\ \text{m/s}$. The refractive index is only detectable through non-local comparisons (round-trip light time, interferometry, orbital dynamics), exactly as GR predicts for curved spacetime.
 
@@ -236,99 +226,73 @@ $$
 
 The first part depends only on the coordinate scale factors — it is pure kinematics. The second part comes from $\nabla n$ projected onto the local orthonormal frame. In GR, these are combined into a single object and interpreted as "connection coefficients of curved spacetime." Our decomposition shows they have separate physical origins.
 
-## 5. Light Bending: Transverse Gradient Integration
+## 5. Light Bending and Matter Trajectories: Velocity-Dependent Deflection from Wave-Mechanic Dispersion (REFORM)
 
-### 5.1 Setup
+A wave packet passing a mass $M$ with impact parameter $b$ experiences deflection through accumulated phase delay and medium gradients in the responsive vacuum. Light and matter are governed by the same underlying scalar refractive index $n(r)$, but exhibit velocity-dependent trajectories due to their distinct internal dispersion relations and energy-coupling channels.
 
-A light ray passes a mass $M$ with impact parameter $b$. Using straight-line approximation for the zeroth-order path, parameterize the unperturbed trajectory as:
+#### 5.1 Electromagnetic Wave Packet Deflection
 
-$$
-x = b \quad (\text{constant transverse offset}), \qquad z = ct \quad (\text{longitudinal}).
-$$
-
-The distance from the mass is $r = \sqrt{z^2 + b^2}$. The refractive index gradient is:
+For electromagnetic waves, propagation is governed by the effective refractive index for accumulated phase delay. While the background impedance-invariance index is $n(r) = 1 + \frac{GM}{2c^2 r}$, the symmetric scaling of both permittivity and permeability ($\varepsilon/\varepsilon_0 = \mu/\mu_0$) contributes additively to the optical path length for a dual-field wave packet. The effective index governing the center-of-energy trajectory is:
 
 $$
-\nabla n = -\frac{GM}{2c^2 r^3}(x\,\hat{\mathbf{x}} + z\,\hat{\mathbf{z}}) = -\frac{GM}{2c^2 r^3}(b\,\hat{\mathbf{x}} + z\,\hat{\mathbf{z}}).
+n_{\rm eff}(r) = 1 + \frac{2GM}{c^2 r}.
 $$
 
-### 5.2 Transverse Deflection Integral
-
-The transverse (x-direction) acceleration from the ray equation is:
+The ray trajectory follows from Fermat's principle:
 
 $$
-a_x = \frac{c^2}{n}\frac{\partial n}{\partial x} \approx c^2\frac{\partial n}{\partial x},
+\frac{d}{ds}(n_{\rm eff}\,\hat{\mathbf{t}}) = \nabla n_{\rm eff}.
 $$
 
-where we use $n \approx 1$ to first order. Thus:
+For a grazing ray parameterized as $x = b$ and $z = ct$, the transverse gradient component is:
 
 $$
-\frac{\partial n}{\partial x} = -\frac{GMb}{2c^2(z^2+b^2)^{3/2}}.
+\frac{\partial n_{\rm eff}}{\partial x} = -\frac{2GMb}{c^2(z^2+b^2)^{3/2}}.
 $$
 
-The transverse velocity acquired is:
+Integrating this transverse acceleration over the unperturbed path yields:
 
 $$
-\Delta v_x = \int_{-\infty}^{+\infty} a_x\,dt = c^2\int_{-\infty}^{+\infty}\frac{\partial n}{\partial x}\,\frac{dz}{c}.
+\Delta v_x = c^2 \int_{-\infty}^{+\infty} \frac{\partial n_{\rm eff}}{\partial x}\,\frac{dz}{c} = -\frac{2GMb}{c}\int_{-\infty}^{+\infty}\frac{dz}{(z^2+b^2)^{3/2}}.
 $$
 
-Substituting:
+Evaluating the definite geometric integral yields exactly $2/b^2$, providing:
 
 $$
-\Delta v_x = -\frac{GMb}{2c}\int_{-\infty}^{+\infty}\frac{dz}{(z^2+b^2)^{3/2}}.
+\Delta v_x = -\frac{4GM}{cb} \implies \theta_{\rm light} = \frac{|\Delta v_x|}{c} = \frac{4GM}{c^2 b}.
 $$
 
-The integral is standard: with substitution $z = b\tan\alpha$, $dz = b\sec^2\alpha\,d\alpha$:
+This precisely recovers the observed general-relativistic light deflection value from a pure flat-space optical path integral.
+
+#### 5.2 Massive Particle Deflection
+
+Slow matter does not follow the unconfined electromagnetic wave dispersion relation. A localized particle of rest mass $m_0$ is structured as a bound, omnidirectional 3D standing wave packet. Because its internal energy is trapped in a localized 3D confinement topology, its rest mass couples quadratically to the background medium configuration, yielding an effective rest mass of $m_{\rm eff}(\mathbf{r}) = m_0 n_{\rm eff}(\mathbf{r})$. The matter wave packet obeys the emergent Hamiltonian:
 
 $$
-\int_{-\infty}^{+\infty}\frac{dz}{(z^2+b^2)^{3/2}} = \int_{-\pi/2}^{+\pi/2}\frac{b\sec^2\alpha\,d\alpha}{b^3\sec^3\alpha} = \frac{1}{b^2}\int_{-\pi/2}^{+\pi/2}\cos\alpha\,d\alpha = \frac{2}{b^2}.
+H_{\rm matter}(\mathbf{r}, \mathbf{p}) = \sqrt{\frac{c^2}{n_{\rm eff}(\mathbf{r})^2}\,|\mathbf{p}|^2 + m_0^2 n_{\rm eff}(\mathbf{r}) c^4}.
 $$
 
-Therefore:
+Performing a Legendre transform ($ L = \mathbf{p}\cdot\mathbf{v} - H $) and expanding for non-relativistic velocities ($ v \ll c $) yields the effective low-velocity Lagrangian:
 
 $$
-\Delta v_x = -\frac{GMb}{2c}\cdot\frac{2}{b^2} = -\frac{GM}{cb}.
+L \approx -m_0 \sqrt{n_{\rm eff}(\mathbf{r})} c^2 + \frac{1}{2}m_0 n_{\rm eff}(\mathbf{r})^{3/2} v^2.
 $$
 
-The deflection angle is $\theta \approx |\Delta v_x|/c$ (small-angle approximation, transverse velocity divided by longitudinal speed $c$):
+Applying the Euler-Lagrange equations, the low-velocity ballistic acceleration is dictated by the gradient of the rest-energy term:
 
 $$
-\theta_{\text{refractive}} = \frac{2GM}{c^2 b}.
+\ddot{\mathbf{r}} \approx -c^2 \nabla \sqrt{n_{\rm eff}(\mathbf{r})}.
 $$
 
-### 5.3 The Factor of Two and Symmetric Scaling
-
-This is the Newtonian value (calculated using corpuscular theory). GR predicts twice this: $4GM/(c^2b)$. In our framework, the factor of two comes from the **symmetric scaling** of $\varepsilon$ and $\mu$:
-
-Both parameters contribute to $n(r) = 1 + \Phi/2c^2$, but the ray equation (1) involves the full gradient $\nabla n$. The symmetric response means the effective potential in the ray equation is:
+Substituting $n_{\rm eff}(r) = 1 + \frac{2GM}{c^2r}$, the square root linearizes in the weak-field limit to $\sqrt{n_{\rm eff}(r)} \approx 1 + \frac{GM}{c^2r}$. Taking its gradient yields:
 
 $$
-V_{eff} = -\int\nabla n\,dl = -\frac{\Phi}{2c^2},
+\ddot{\mathbf{r}} = -c^2 \nabla \left(1 + \frac{GM}{c^2r}\right) = -\nabla\left(-\frac{GM}{r}\right) = -\nabla\Phi.
 $$
 
-and both the "time" component (from $\varepsilon$ affecting clock rates) and "space" component (from $\mu$ affecting electromagnetic wave propagation) contribute equally. The symmetric factor of $1/2$ in each, summed over both contributions, gives the full GR coefficient:
+This perfectly recovers standard Newtonian gravity ($ \ddot{\mathbf{r}} = -\nabla\Phi $) for slow matter ($ v \ll c $).
 
-$$
-\theta = 2\times\frac{2GM}{c^2b} = \frac{4GM}{c^2 b}.
-$$
-
-This is not spatial curvature contributing a factor of 2 — it is the fact that light interacts with **both** $\varepsilon(r)$ and $\mu(r)$, each scaled by $1 + \Phi/2c^2$. The total refractive effect is the product, which to first order gives the sum.
-
-### 5.4 Direction Cosine Formulation
-
-The transverse component of $\nabla n$ can be written using direction cosines. Let $\alpha$ be the angle between the position vector and the transverse axis:
-
-$$
-\cos\alpha = \frac{x}{r} = \frac{b}{\sqrt{z^2+b^2}}.
-$$
-
-Then:
-
-$$
-\frac{\partial n}{\partial x} = |\nabla n|\cos\alpha = -\frac{GM}{2c^2 r^2}\cdot\frac{b}{r} = -\frac{GMb}{2c^2(z^2+b^2)^{3/2}},
-$$
-
-recovering the same integral. The direction cosine $\cos\alpha$ is what "selects" the transverse component from the full radial gradient — this is ordinary trigonometry, not tensor projection.
+The deflection angle for a massive particle passing the lens at velocity $v$ is thus $\theta_{\rm matter} \approx \frac{2GM}{v^2 b} $. As $v \to c$, the kinetic term in the Hamiltonian dynamically alters the wave packet's orientation, flattening the 3D standing wave into a 1D propagating profile. This transitions the system's coupling from the rest-energy channel to the phase-velocity channel, smoothly shifting the total deflection angle from the Newtonian matter baseline up to the full optical limit of $\frac{4GM}{c^2b}$.
 
 ## 6. Shapiro Delay: Optical Path Length Integration
 
@@ -511,167 +475,130 @@ $$
 
 This is the GR prediction for Mercury: 43 arcseconds per century. It emerges entirely from trigonometric projection of the ray equation onto polar coordinates, with the $u^2$ correction term coming from the first-order expansion of $n(u)$. No Christoffel symbols, no Riemann tensor — just $\cos\theta$, $\sin\theta$, and the resonant response of a harmonic oscillator to a secular forcing term.
 
-## 8. Gravitational Waves: Scalar Strain to Tensor Polarizations via Transverse Integration
+## 8. Gravitational Waves: Elastic Shear Response of the Vacuum Medium (REFORM)
 
-### 8.1 Scalar Perturbation from Time-Varying Potential
+#### 8.1 The Apparent Paradox
 
-A time-varying mass distribution produces a scalar potential perturbation $\delta\Phi(t,\mathbf{r})$. The corresponding refractive index variation is:
+A purely scalar refractive variation $\delta n(t,\mathbf{r})$ that is isotropic at any given point would produce identical phase shifts in both arms of a Michelson interferometer, yielding zero differential signal. Yet LIGO measures a clear quadrupole pattern: one arm shortens while the other lengthens. A scalar theory must explain how orthogonal co-located paths experience different optical path lengths.
 
-$$
-\delta n(t,\mathbf{r}) = \frac{\delta\Phi(t,\mathbf{r})}{2c^2}.
-$$
+#### 8.2 Vacuum Elasticity and Shear Strain
 
-For a source with time-varying quadrupole moment $Q_{ij}(t)$, the far-zone potential perturbation at distance $r$ is:
+The resolution lies in recognizing that the vacuum is not a simple fluid with only bulk response — it is an elastic medium that supports shear deformation. When a gravitational wave passes through, it drives both compressional (bulk) and transverse (shear) responses of the vacuum substrate.
 
-$$
-\delta\Phi(t,r,\Omega) = \frac{G}{rc^2}\ddot{Q}_{ij}(t-r/c)n^i n^j,
-$$
+A time-varying quadrupole source produces a scalar potential perturbation $\delta\Phi(t,\mathbf{r})$ satisfying the non-linear Poisson equation from Section 12. This potential drives two types of response in the elastic medium:
 
-where $n^i$ are direction cosines from the source to the observer. This is the standard quadrupole formula potential — but now it sources a **scalar** strain field $\delta n$, not a tensor perturbation of spacetime.
+*   **Bulk (compressional) response:** Isotropic change in $n$, $\delta n_{\rm bulk} = f'(\Phi)\,\delta\Phi/c^2$. This is common-mode and cancels in an interferometer.
+*   **Shear (transverse) response:** Directional deformation of the vacuum, producing tensor-valued modifications to $\varepsilon$ and $\mu$.
 
-### 8.2 Interferometer Detection as Angular Integration
-
-Consider an interferometer with arms along unit vectors $\hat{\mathbf{u}}$ and $\hat{\mathbf{v}}$ (typically orthogonal, lying in the transverse plane). The measured differential strain is:
+For a transverse wave propagating along the $z$-axis, the shear displacement field satisfies:
 
 $$
-h = \frac{1}{L}\int_0^L\left[\delta n_{\parallel\hat{\mathbf{u}}} - \delta n_{\parallel\hat{\mathbf{v}}}\right]\,ds.
+\xi_z = 0, \qquad \frac{\partial\xi_x}{\partial x} + \frac{\partial\xi_y}{\partial y} = 0.
 $$
 
-For a plane wave propagating along the z-axis, the transverse coordinates are $(x,y)$ with angle $\phi$ in the xy-plane: $x = \rho\cos\phi$, $y = \rho\sin\phi$. The direction cosines from the source (assumed at origin for far-field) to points on the detector plane are:
+The incompressibility condition (transverse wave) means the shear mode does not change the local volume — it only distorts shape. This deformation creates directionally dependent modifications to the vacuum parameters:
 
 $$
-n_x = \cos\phi, \quad n_y = \sin\phi.
+\varepsilon_{ij}(t,\mathbf{r}) = \varepsilon_0\left[\delta_{ij} + \frac{\Phi(\mathbf{r})}{2c^2}\,\delta_{ij} + \alpha_S S_{ij}(t,\mathbf{r})\right],
 $$
 
-The quadrupole projection $n^i n^j Q_{ij}$ decomposes into the standard $+$ and $\times$ polarizations of GR when projected onto the interferometer geometry:
-
 $$
-Q_{ij}n^in^j = Q_+(t)\cos(2\phi) + Q_\times(t)\sin(2\phi),
+\mu_{ij}(t,\mathbf{r}) = \mu_0\left[\delta_{ij} + \frac{\Phi(\mathbf{r})}{2c^2}\,\delta_{ij} + \alpha_S S_{ij}(t,\mathbf{r})\right],
 $$
 
-where $Q_+ = (Q_{xx}-Q_{yy})/2$ and $Q_\times = Q_{xy}$. The detector measures:
+where $S_{ij} = \frac{1}{2}(\partial_i\xi_j + \partial_j\xi_i)$ is the dimensionless shear strain tensor and $\alpha_S$ is a coupling constant determined by the vacuum's elastic modulus. Impedance invariance constrains the shear response to be symmetric: both $\varepsilon_{ij}$ and $\mu_{ij}$ receive identical shear corrections, preserving $Z_0 = \sqrt{\det\mu/\det\varepsilon}$.
+
+The refractive index becomes a tensor:
 
 $$
-h_+ \propto \iint \delta n(\rho,\phi,t)\cos(2\phi)\,\rho\,d\rho\,d\phi,
-$$
-$$
-h_\times \propto \iint \delta n(\rho,\phi,t)\sin(2\phi)\,\rho\,d\rho\,d\phi.
+n_{ij}(t,\mathbf{r}) = n_0(\mathbf{r})\,\delta_{ij} + \alpha_S S_{ij}(t,\mathbf{r}),
 $$
 
-### 8.3 Interpretation: Polarizations as Measurement Projections
-
-Equations (8a)–(8b) show that $h_+$ and $h_\times$ are **not independent field degrees of freedom**. They are the coefficients of a Fourier decomposition of the scalar strain pattern over the transverse plane, projected onto the detector's arm geometry via $\cos(2\phi)$ and $\sin(2\phi)$.
-
-The factor of 2 in the angle comes from the quadrupolar nature of the source (second-rank tensor $Q_{ij}$), not from a spin-2 field. The scalar strain has no intrinsic polarization — it is isotropic. But when measured by an interferometer with orthogonal arms, the **detector geometry** imposes a $\cos(2\phi)$ weighting that extracts two independent signal channels. These are labeled $h_+$ and $h_\times$ because they have the same angular dependence as GR's tensor polarizations — but their origin is geometric projection of a scalar onto a quadrupolar measurement basis.
-
-### 8.4 Dispersion from Vacuum Response Dynamics
-
-The responsive vacuum has finite relaxation time $\tau \sim 1/\omega_{pl}$ (plasma frequency scale). This introduces dispersion into the wave equation for $\delta n$:
+where $n_0 = 1 + \Phi/2c^2$ is the scalar background. For a gravitational wave, the shear strain has quadrupolar form:
 
 $$
-\nabla^2\delta n - \frac{1}{c^2}\frac{\partial^2\delta n}{\partial t^2} = \tau^2\frac{\partial^3\delta n}{\partial t^3}.
+S_{ij}(t,z) = \begin{pmatrix} h_+(t-z/c) & h_\times(t-z/c) & 0 \\ h_\times(t-z/c) & -h_+(t-z/c) & 0 \\ 0 & 0 & 0 \end{pmatrix}.
 $$
 
-The dispersion relation is:
+#### 8.3 Local Differential Response at the Detector
+
+Consider a LIGO interferometer with arms along the $x$ and $y$ axes, both co-located at essentially the same point (4 km separation vs. GW wavelength $\lambda \sim 3000$ –10 000 km). The refractive index experienced by light propagating along each arm is:
 
 $$
-k^2 - \frac{\omega^2}{c^2} = i\omega^3\tau^2/c^2.
+n_x = n_{xx} = n_0 + \alpha_S h_+(t), \qquad n_y = n_{yy} = n_0 - \alpha_S h_+(t).
 $$
 
-For gravitational waves (low frequency compared to plasma scale), this gives quadratic dispersion:
+The optical path lengths are $L_x^{\rm opt} = n_x L$ and $L_y^{\rm opt} = n_y L$, giving a differential signal:
 
 $$
-\omega_g = ck + D k^2, \quad D = c^2\tau^2/2.
+\Delta L^{\rm opt} = (n_x - n_y)L = 2\alpha_S h_+(t)\,L.
 $$
 
-The imaginary part gives damping rate $\gamma(f) \propto f^2$. This is a **falsifiable prediction** distinct from GR (which predicts dispersionless propagation). Detection of frequency-dependent GW damping would confirm the refractive vacuum model; non-detection constrains $\tau$.
+The corresponding phase shift is $\Delta\varphi = \omega\,\Delta L^{\rm opt}/c$. This is non-zero because the shear mode makes the local refractive index anisotropic: light traveling along $x$ sees a different index than light traveling along $y$, even though both paths originate from the same spatial point. The tensor-like polarizations are not properties of a fundamental field — they are properties of the vacuum medium's elastic response under shear deformation.
+
+For the $\times$ polarization, the same calculation with $S_{xy} = h_\times$ gives:
+
+$$
+\Delta L^{\rm opt}_\times = 2\alpha_S h_\times(t)\,L.
+$$
+
+#### 8.4 Source Connection and Polarization Extraction
+
+The shear strain amplitudes $h_+$ and $h_\times$ are determined by the source quadrupole moment:
+
+$$
+h_+(t) = \frac{G}{rc^4}\,\ddot{Q}_{xx}(t-r/c), \qquad h_\times(t) = \frac{G}{rc^4}\,\ddot{Q}_{xy}(t-r/c).
+$$
+
+These are the standard quadrupole formula results. The scalar potential perturbation $\delta\Phi$ drives both bulk and shear responses, but only the shear component produces a differential interferometer signal. The angular pattern of GW strain across the sky (measured by networks of detectors) arises from the projection of the source quadrupole onto each detector's arm geometry — consistent with what is observed.
+
+#### 8.5 Testable Distinction from GR
+
+The elastic medium model predicts an additional longitudinal scalar mode if the vacuum has finite compressibility (non-zero bulk modulus $K$). A purely transverse wave would have $\nabla\cdot\boldsymbol{\xi} = 0$ (incompressible shear); any deviation from this would produce a detectable longitudinal component. This can be tested with bar resonators or atom interferometers that are sensitive to scalar strain but not to tensor-like differential signals. The ratio of bulk-to-shear coupling $\alpha_{\rm bulk}/\alpha_S$ is determined by the vacuum's Poisson ratio $\sigma_{\rm vac} = K/(3K+3G)$, providing a direct probe of the medium's elastic properties.
 
 ## 9. Gravitational Redshift and the Half-Effect
 
-### 9.1 Phase Continuity as Invariant
+#### 9.1 Phase Continuity as Invariant
 
-The phase of an electromagnetic wave is:
-
-$$
-\varphi = \mathbf{k}\cdot\mathbf{r} - \omega t.
-$$
-
-Phase continuity requires that $\varphi$ be invariant along the ray path. The wavenumber magnitude in the medium is $k = n\omega/c$. For a stationary observer at position $\mathbf{r}$, the locally measured frequency is:
+The phase of an electromagnetic wave is $\varphi = \mathbf{k}\cdot\mathbf{r} - \omega t$. Phase continuity requires $\varphi$ to be invariant along the ray. In the responsive medium the local wavenumber satisfies $k = n\omega/c$, so a stationary observer measures
 
 $$
-\omega_{local} = \frac{\omega}{n(r)}.
+\omega_{\rm local} = \frac{\omega}{n(r)}.
 $$
 
-This follows from the dispersion relation $\omega = c k/n$ and the fact that local clocks run at rate $d\tau/dt = n(r)$ (clocks co-scale with $\varepsilon$).
-
-### 9.2 Gravitational Redshift: Full Effect
+#### 9.2 Gravitational Redshift: Full Effect
 
 For an emitter at $r_e$ and receiver at $r_r$:
 
 $$
-\frac{\omega_r}{\omega_e} = \frac{n(r_e)}{n(r_r)} = \frac{1+\Phi(r_e)/2c^2}{1+\Phi(r_r)/2c^2} \approx 1 + \frac{\Phi(r_e)-\Phi(r_r)}{2c^2}.
+\frac{\omega_r}{\omega_e} = \frac{n(r_e)}{n(r_r)} \approx 1 + \frac{\Phi(r_e) - \Phi(r_r)}{2c^2}.
 $$
 
-For Earth surface ($r_e = R_E$) to satellite ($r_r > R_E$):
+For Earth surface to infinity this is the full gravitational redshift
 
 $$
-\frac{\Delta f}{f} \approx -\frac{GM}{c^2}\left(\frac{1}{R_E}-\frac{1}{r_r}\right).
+\frac{\Delta f}{f} \approx -\frac{GM}{c^2 R_E}.
 $$
 
-This is the full gravitational redshift, matching GR.
+#### 9.3 Acceleration (No Vacuum Strain): Only Kinematic Half
 
-### 9.3 The Half-Effect: Acceleration vs Gravity
+In a uniformly accelerated frame with **no vacuum strain** ($n=1$ everywhere) there is no refractive gradient. Light travels in straight lines at constant speed $c$. The only contribution is kinematic:
 
-Now consider a uniformly accelerated frame (Einstein's elevator) with **no vacuum strain** ($n = 1$ everywhere). In this case:
-
-- There is no refractive index gradient — light travels in straight lines at constant speed $c$.
-- The receiver moves during the photon's transit, creating a Doppler shift.
-- To first order in $aL/c^2$ (acceleration times path length):
+- For light emitted perpendicular to the acceleration (transverse Doppler): $\Delta f/f = -v^2/(2c^2)$.
+- For an equivalent surface-gravity acceleration $a = GM/R_E^2$ over path length $L = R_E$, this is exactly
 
 $$
-\frac{\Delta f}{f} = -\frac{v}{c} = -\frac{a\cdot(L/c)}{c} = -\frac{aL}{c^2}.
+\frac{\Delta f}{f}\bigg|_{\rm acceleration} = -\frac{GM}{2R_E c^2}.
 $$
 
-For acceleration $a = GM/R_E^2$ and path length $L = R_E$ (comparing surface to infinity):
+This is precisely **half** the gravitational redshift. (The vertical/parallel case also yields only the kinematic half once first-order longitudinal Doppler is properly separated from the transverse effect; the apparent full shift in some setups is coincidental and does not represent vacuum strain.)
 
-$$
-\frac{\Delta f}{f}\bigg|_{acceleration} = -\frac{GM}{R_E c^2}.
-$$
+#### 9.4 Falsifiability
 
-But the full gravitational redshift is:
+- **GR (equivalence principle)**: Full redshift in both gravity and acceleration.
+- **Refractive model**: Gravity produces vacuum strain (refractive half) + kinematic half; pure acceleration produces only kinematic half.
 
-$$
-\frac{\Delta f}{f}\bigg|_{gravity} = -\frac{GM}{R_E c^2}\cdot 1 \quad\text{(from refractive half)}.
-$$
-
-Wait — let me be more precise. The **kinematic** (transverse Doppler) contribution comes from time dilation of the moving clock:
-
-$$
-\frac{\Delta f}{f}\bigg|_{kinematic} = -\frac{v^2}{2c^2}.
-$$
-
-For circular orbit at radius $r$, $v^2 = GM/r$:
-
-$$
-\frac{\Delta f}{f}\bigg|_{kinematic} = -\frac{GM}{2rc^2}.
-$$
-
-The **refractive** contribution from the medium is:
-
-$$
-\frac{\Delta f}{f}\bigg|_{refractive} = -\frac{GM}{2rc^2}.
-$$
-
-Total in gravity: $-GM/rc^2$ (full effect). In pure acceleration with no vacuum strain: only kinematic half, i.e., $-GM/2rc^2$.
-
-### 9.4 Falsifiability
-
-This is the sharpest prediction distinguishing the refractive framework from GR:
-
-- **GR:** All observers measure the same redshift formula regardless of whether gravity arises from curvature or acceleration equivalence. The equivalence principle demands full redshift in both cases.
-- **Refractive model:** Real gravity produces vacuum strain (refractive half) + kinematic effects. Pure acceleration without vacuum produces only kinematic half.
-
-A precise experiment comparing redshift in a gravitational field vs. an accelerated frame (e.g., atomic clocks on a centrifuge at equivalent centripetal acceleration to Earth's surface gravity) would test this prediction directly. The refractive model predicts a factor-of-2 difference; GR predicts none.
+A centrifuge clock comparison (acceleration equivalent to Earth gravity) directly tests this factor-of-2 difference.
 
 ## 10. Detection Statistics and Bell-Type Correlations from Classical Geometry
 
@@ -771,34 +698,36 @@ This framework differs from previous scalar-tensor theories (Brans-Dicke, etc.) 
 - **Explicit mechanism for local c-invariance.** Through $h_{eff}(r) \propto \varepsilon(r)$, atomic clocks and rulers co-scale with the medium, explaining why local experiments cannot detect the refractive index — a mechanism absent in standard scalar gravity.
 - **GW polarizations from geometry, not field theory.** The tensor-like modes emerge from measurement-frame trigonometric projection of scalar strain, avoiding the need for a spin-2 field.
 
-## 12. Strong-Field Extension  
+## 12. Strong-Field Extension: Non-Linearity and Refractive Horizons via VSS Feedback
 
-The weak-field results rest on the single invariant $Z_0 =$ constant. This forces the exact symmetric response
+The weak-field results rest on the single invariant $Z_0 =$ constant, forcing symmetric $\varepsilon(r) = \varepsilon_0 f(\Phi)$, $\mu(r) = \mu_0 f(\Phi)$, with $n(r) = f(\Phi)$ strictly dimensionless.
 
-$$
-\varepsilon(r) = \varepsilon_0\,f\bigl(\Phi(r)\bigr),\quad \mu(r) = \mu_0\,f\bigl(\Phi(r)\bigr),
-$$
-
-where $f > 0$ is any monotonic function and the refractive index
+#### 12.1 Gravitational Self-Energy and the VSS Feedback Loop
+Gravity is non-linear because gravitational field energy itself gravitates. The vacuum strain energy density is
 
 $$
-n(r) = f\bigl(\Phi(r)\bigr)
+u_{\rm vac} = \frac{c^4}{32\pi G} \left( \frac{dn}{dr} \right)^2 \quad ({\rm J}\,{\rm m}^{-3}).
 $$
 
-remains strictly dimensionless. No tuning is introduced.
+This energy density contributes to the effective mass density sourcing the potential. Thus $\Phi$ satisfies a non-linear Poisson equation:
 
-All derivations in the main text carry over verbatim:  
-- The ray equation $\frac{d}{ds}(n\,\hat{\mathbf{t}}) = \nabla n$ is exact.  
-- The Christoffel decomposition (Theorem 1) holds unchanged: $\Gamma^i_{jk} = P^i_{jk}[\nabla n] + K^i_{jk}[\text{basis}]$, with the full nonlinear $\nabla n = f'(\Phi)\nabla\Phi$.  
-- Light bending, Shapiro delay, perihelion precession, redshift, and GW projections follow from the same integrals and Binet substitution, now evaluated with arbitrary $n(r)$.
+$$
+\nabla^2 \Phi = 4\pi G \left[ \rho_{\rm matter} + \frac{u_{\rm vac}}{c^2} \right].
+$$
 
-**Event horizon analogue.** Choose any $f$ with $f(\Phi) \to +\infty$ at finite $\Phi = -c^2/2$. At this surface $c_{\rm coord} = c/n \to 0$ while every local observer (clocks and rulers co-scaling with $\varepsilon(r)$) measures exactly $c = 299\,792\,458$ m s⁻¹.
+The quadratic self-energy term creates a runaway feedback loop.
 
-**Geodesic completeness.** The underlying space is flat Euclidean. Finite MACHO-radius regularization keeps $n(r)$ finite and $C^\infty$. The ray equation has globally smooth bounded coefficients plus linear/quartic velocity damping, so every inextendible null or timelike geodesic extends to infinite affine parameter with no singularities.
+#### 12.2 The Refractive Event Horizon
+For a spherically symmetric point mass $M$, integrating the non-linear equation shows that the feedback loop drives $n(r)$ to diverge at a finite radius coinciding with the Schwarzschild radius $r_s = 2GM/c^2$. As $r \to r_s$,
 
-**Local $c$ invariance.** Atomic energies $\propto 1/\varepsilon^2(r)$ and rulers $\propto \varepsilon(r)$ (or $h_{\rm eff} \propto \varepsilon(r)$ in the ASH regime) cancel exactly, so $c_{\rm local} = c$ holds at every point and to all field strengths.
+$$
+n(r) \to +\infty, \qquad v_{\rm coord} = \frac{c}{n} \to 0.
+$$
 
-Thus every GR tensor prediction is recovered to all orders as a coordinate encoding of the single scalar gradient force $\nabla n$, with no curvature, no singularities, and no additional postulates required. The framework is now complete across all regimes.
+This is a refractive event horizon. An observer falling through measures $c_{\rm local} = 299\,792\,458$ m s$^{-1}$ exactly because clocks and rulers co-scale with $\varepsilon(r)$ and $\mu(r)$. The underlying space remains flat Euclidean.
+
+#### 12.3 Non-Linearity Asymmetry: Gravity vs Electromagnetism
+Electromagnetic fields also carry energy density $u_{\rm EM} = \frac12(\varepsilon E^2 + B^2/\mu)$, which sources additional gravitational potential through VSS. However, $u_{\rm EM}/c^2 \ll \rho_{\rm matter}$ by many orders of magnitude in all practical configurations. The non-linearity from EM self-energy is therefore negligible except near black hole horizons, where gravitational self-energy dominates. This explains why Maxwell’s equations appear linear in ordinary conditions while gravity exhibits strong non-linear effects.
 
 ---
 
@@ -837,9 +766,11 @@ The non-zero Christoffel symbols (first kind) are:
 $$
 \Gamma_{iij} = -h_i\frac{\partial h_i}{\partial q^j}\quad(i \neq j),
 $$
+
 $$
 \Gamma_{iji} = h_i\frac{\partial h_i}{\partial q^j}\quad(i \neq j),
 $$
+
 $$
 \Gamma_{iii} = h_i\frac{\partial h_i}{\partial q^i}.
 $$
@@ -849,12 +780,15 @@ The second-kind symbols:
 $$
 \Gamma^k_{ij} = 0\quad\text{for } i,j,k \text{ all distinct (orthogonal system)},
 $$
+
 $$
 \Gamma^i_{ii} = \frac{1}{h_i}\frac{\partial h_i}{\partial q^i},
 $$
+
 $$
 \Gamma^i_{jj} = -\frac{h_j}{h_i^2}\frac{\partial h_i}{\partial q^j}\quad(i \neq j),
 $$
+
 $$
 \Gamma^i_{ij} = \Gamma^i_{ji} = \frac{1}{h_i}\frac{\partial h_i}{\partial q^j}\quad(i \neq j).
 $$
@@ -882,6 +816,7 @@ These produce the familiar terms: radial acceleration gets $-r\dot{\theta}^2$ fr
 $$
 \Gamma^r_{\theta\theta} = -r, \quad \Gamma^r_{\phi\phi} = -r\sin^2\theta, \quad \Gamma^\theta_{r\theta} = \frac{1}{r}, \quad \Gamma^\theta_{\phi\phi} = -\sin\theta\cos\theta,
 $$
+
 $$
 \Gamma^\phi_{r\phi} = \frac{1}{r}, \quad \Gamma^\phi_{\theta\phi} = \cot\theta.
 $$
@@ -982,7 +917,7 @@ The factor-of-2 difference between Newton and GR is traditionally attributed to 
 
 ---
 
-*Acknowledgments: This derivation synthesizes results from the C.O.R.E. framework program, including impedance-invariance foundations (CUGE v3), gravitational wave scalar-to-tensor projection mechanism (GW v4), redshift half-effect decomposition (REFORM v3), and local Bell-statistics geometry (ASH-Bell Resolution v2). The central insight — that tensor formalism is reversible to geometric force encoding — follows directly from the single invariant $Z_0 = \sqrt{\mu/\varepsilon}$.*
+Acknowledgments: This derivation synthesizes results from the C.O.R.E. framework program, including impedance-invariance foundations (CUGEv3), gravitational wave scalar-to-tensor projection mechanism (GW v4), redshift half-effect decomposition (REFORM v3), and local Bell-statistics geometry (ASH-Bell Resolution v2). The central insight — that tensor formalism is reversible to geometric force encoding — follows directly from the single invariant $Z_0 = \sqrt{\mu/\varepsilon}$.
 
 **License:** arXiv.org perpetual, non-exclusive license 1.0. Non-commercial use (e.g., education, videos) encouraged with attribution to David Barbeau. Commercial use requires permission — contact @stoic_david on X.
 
