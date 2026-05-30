@@ -27,7 +27,7 @@ The derivation proceeds from a single invariant: vacuum impedance $Z_0 = \sqrt{\
 
 - **J4 (Proposition 3):** Gravitational wave polarizations $h_+$ and $h_\times$ are extracted from scalar strain $\delta n(t,\mathbf{r})$ by integrating against $\cos(2\phi)$ and $\sin(2\phi)$ over the transverse disk. The tensor-like quadrupolar modes are measurement-frame projections of a scalar field, not independent field degrees of freedom.
 
-- **J5 (Proposition 4):** Gravitational redshift decomposes into kinematic half (transverse Doppler from path lengthening via $\cos\theta \approx v/c$) and refractive half (clock co-scaling with $\varepsilon(r)$). Under pure acceleration without vacuum strain, only the kinematic half appears — a falsifiable prediction distinguishing this framework from GR.
+- **J5 (Proposition 4):** Gravitational redshift decomposes into kinematic half (transverse Doppler from path lengthening via $\cos\theta \approx v/c$ ) and refractive half (clock co-scaling with $\varepsilon(r)$ ). Under pure acceleration without vacuum strain, only the kinematic half appears — a falsifiable prediction distinguishing this framework from GR.
 
 ## 2. From Impedance Invariance to Refractive Index
 
@@ -272,7 +272,7 @@ $$
 H_{\rm matter}(\mathbf{r}, \mathbf{p}) = \sqrt{\frac{c^2}{n_{\rm eff}(\mathbf{r})^2}\,|\mathbf{p}|^2 + m_0^2 n_{\rm eff}(\mathbf{r}) c^4}.
 $$
 
-Performing a Legendre transform ($ L = \mathbf{p}\cdot\mathbf{v} - H $) and expanding for non-relativistic velocities ($ v \ll c $) yields the effective low-velocity Lagrangian:
+Performing a Legendre transform ( $L = \mathbf{p}\cdot\mathbf{v} - H$ ) and expanding for non-relativistic velocities ( $v \ll c$ ) yields the effective low-velocity Lagrangian:
 
 $$
 L \approx -m_0 \sqrt{n_{\rm eff}(\mathbf{r})} c^2 + \frac{1}{2}m_0 n_{\rm eff}(\mathbf{r})^{3/2} v^2.
@@ -290,7 +290,7 @@ $$
 \ddot{\mathbf{r}} = -c^2 \nabla \left(1 + \frac{GM}{c^2r}\right) = -\nabla\left(-\frac{GM}{r}\right) = -\nabla\Phi.
 $$
 
-This perfectly recovers standard Newtonian gravity ($ \ddot{\mathbf{r}} = -\nabla\Phi $) for slow matter ($ v \ll c $).
+This perfectly recovers standard Newtonian gravity ( $\ddot{\mathbf{r}} = -\nabla\Phi$ ) for slow matter ( $v \ll c$ ).
 
 The deflection angle for a massive particle passing the lens at velocity $v$ is thus $\theta_{\rm matter} \approx \frac{2GM}{v^2 b} $. As $v \to c$, the kinetic term in the Hamiltonian dynamically alters the wave packet's orientation, flattening the 3D standing wave into a 1D propagating profile. This transitions the system's coupling from the rest-energy channel to the phase-velocity channel, smoothly shifting the total deflection angle from the Newtonian matter baseline up to the full optical limit of $\frac{4GM}{c^2b}$.
 
