@@ -39,7 +39,7 @@ Under a gravitational potential, the vacuum responds by adjusting both permittiv
 
 \[ \varepsilon(r) = \varepsilon_0\left(1 + \frac{\Phi(r)}{2c^2}\right), \quad \mu(r) = \mu_0\left(1 + \frac{\Phi(r)}{2c^2}\right). \]
 
-The symmetric factor of \(1/2\) is not chosen — it follows from the constraint that both parameters respond equally while maintaining a constant ratio. The refractive index is:
+The symmetric factor of \(1/2\) is not chosen — it follows from the constraint that both parameters respond equally while maintaining a constant ratio. This specific coefficient produces equal kinematic and refractive contributions to gravitational redshift, enabling the falsifiable half-effect prediction (pure acceleration yields only the kinematic half). The effective index used for trajectories (light and matter) is calibrated separately in Section 5. The refractive index is:
 
 \[ n(r) = \sqrt{\frac{\varepsilon(r)\mu(r)}{\varepsilon_0\mu_0}} = 1 + \frac{\Phi(r)}{2c^2} + O\left(\frac{\Phi^2}{c^4}\right). \]
 
@@ -232,11 +232,13 @@ A wave packet passing a mass \( M \) with impact parameter \( b \) experiences d
 
 #### 5.1 Electromagnetic Wave Packet Deflection
 
-For electromagnetic waves, propagation is governed by the effective refractive index for accumulated phase delay. While the background impedance-invariance index is \( n(r) = 1 + \frac{GM}{2c^2 r} \), the symmetric scaling of both permittivity and permeability (\( \varepsilon/\varepsilon_0 = \mu/\mu_0 \)) contributes additively to the optical path length for a dual-field wave packet. The effective index governing the center-of-energy trajectory is:
+For electromagnetic waves, propagation is governed by the effective refractive index calibrated to reproduce the weak-field isotropic Schwarzschild metric of GR (which produces the observed deflection factor of 4). Impedance invariance fixes only the *symmetric form* \(\varepsilon_r = \mu_r = f(\Phi)\), ensuring constant \(Z_0\) and local Maxwell structure with no reflections. The magnitude of the response is fixed by requiring simultaneous consistency with (i) Newtonian gravity for slow matter (via the effective rest-mass coupling in Section 5.2) and (ii) the GR light deflection. This yields the effective index for the center-of-energy trajectory of null geodesics:
 
 \[
 n_{\rm eff}(r) = 1 + \frac{2GM}{c^2 r}.
 \]
+
+(The constitutive scaling with coefficient \(1/2\) in Section 2 is retained specifically to produce equal kinematic and refractive contributions to gravitational redshift, enabling the falsifiable half-effect prediction. The trajectory-effective \(n_{\rm eff}\) incorporates the full GR-equivalent contributions from both constitutive parameters, analogous to the combined time-dilation and spatial-curvature terms in the isotropic geodesic equation.)
 
 The ray trajectory follows from Fermat's principle:
 
@@ -266,7 +268,13 @@ This precisely recovers the observed general-relativistic light deflection value
 
 #### 5.2 Massive Particle Deflection
 
-Slow matter does not follow the unconfined electromagnetic wave dispersion relation. A localized particle of rest mass \( m_0 \) is structured as a bound, omnidirectional 3D standing wave packet. Because its internal energy is trapped in a localized 3D confinement topology, its rest mass couples quadratically to the background medium configuration, yielding an effective rest mass of \( m_{\rm eff}(\mathbf{r}) = m_0 n_{\rm eff}(\mathbf{r}) \). The matter wave packet obeys the emergent Hamiltonian:
+Slow matter does not follow the unconfined electromagnetic wave dispersion relation. A localized particle of rest mass \( m_0 \) is structured as a bound, omnidirectional 3D standing wave packet. Because its internal energy is trapped in a localized 3D confinement topology, its rest mass couples quadratically to the background medium configuration. As calibrated in Section 5.1 (to simultaneously recover Newtonian gravity and the GR light deflection), this yields an effective rest mass of \( m_{\rm eff}(\mathbf{r}) = m_0 n_{\rm eff}(\mathbf{r}) \) with
+
+\[
+n_{\rm eff}(r) = 1 + \frac{2GM}{c^2 r}.
+\]
+
+The matter wave packet obeys the emergent Hamiltonian:
 
 \[
 H_{\rm matter}(\mathbf{r}, \mathbf{p}) = \sqrt{\frac{c^2}{n_{\rm eff}(\mathbf{r})^2}\,|\mathbf{p}|^2 + m_0^2 n_{\rm eff}(\mathbf{r}) c^4}.
