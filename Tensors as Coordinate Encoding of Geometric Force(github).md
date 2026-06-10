@@ -240,10 +240,6 @@ $$
 
 (The constitutive scaling with coefficient $1/2$ in Section 2 is retained specifically to produce equal kinematic and refractive contributions to gravitational redshift, enabling the falsifiable half-effect prediction. The trajectory-effective $n_{\rm eff}$ incorporates the full GR-equivalent contributions from both constitutive parameters, analogous to the combined time-dilation and spatial-curvature terms in the isotropic geodesic equation.)
 
-$$
-n_{\rm eff}(r) = 1 + \frac{2GM}{c^2 r}.
-$$
-
 The ray trajectory follows from Fermat's principle:
 
 $$
