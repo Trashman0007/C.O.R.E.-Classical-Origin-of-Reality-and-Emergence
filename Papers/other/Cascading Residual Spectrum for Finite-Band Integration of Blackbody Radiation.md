@@ -146,7 +146,7 @@ Its integral over any finite band $[\nu_1,\nu_2]$ is the exact, rapidly converge
 
 This simultaneously:
 - completes the derivation that ASH §3.4 stated “requires derivation”,
-- supplies a practical, closed-form tool for the finite-band integration problem posed on the physicsdiscussionforum,
+- supplies a practical, closed-form tool for the finite-band integration problem,
 - remains strictly inside flat Euclidean 3-space, continuous waves, and the C.O.R.E. postulates.
 
 **The ultraviolet catastrophe is avoided because high-frequency energy is almost entirely residual and is forced to cascade downward; the finite-band integral is the truncated geometric series of those residuals.**
