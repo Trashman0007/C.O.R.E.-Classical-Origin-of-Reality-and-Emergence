@@ -108,11 +108,11 @@ $$
 
 ### 5. Special cases
 - **Total integral** ($\nu_1=0$, $\nu_2=\infty$):
-  
-  $$
-  \sum_{n=1}^\infty\frac1{n^4}=\zeta(4)=\frac{\pi^4}{90}\qquad\Rightarrow\qquad
-  U_{\rm tot}=\frac{4\sigma T^4}{c},\qquad\sigma=\frac{2\pi^5 k^4}{15 c^2 h_{\rm eff}^3}.
-  $$
+
+$$
+\sum_{n=1}^\infty\frac1{n^4}=\zeta(4)=\frac{\pi^4}{90}\qquad\Rightarrow\qquad
+U_{\rm tot}=\frac{4\sigma T^4}{c},\qquad\sigma=\frac{2\pi^5 k^4}{15 c^2 h_{\rm eff}^3}.
+$$
   
   (Stefan–Boltzmann recovered exactly.)
 
