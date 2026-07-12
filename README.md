@@ -59,7 +59,7 @@ All results derive from Eq. (1.1) applied consistently across domains — no fre
 
 I created this repository to openly share all simulation scripts, raw n-body data, and numerical results, and I invite independent scrutiny, replication, and critique.
 
-For the most up-to-date papers revisions visit my website: https://www.bigbadaboom.ca , most papers are also published on arxiv.
+For the most up-to-date papers revisions visit my website: https://www.bigbadaboom.ca , most papers are also published on vixra.
 I will also upload the updated papers here in md format, it is somehow math heavy and unfortunately github does not make use of modern mathjax delimiters so those documents will be best viewed with md readers like [NoteDiscovery](https://github.com/gamosoft/NoteDiscovery) 
 
 
