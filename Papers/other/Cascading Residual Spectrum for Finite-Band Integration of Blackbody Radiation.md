@@ -4,7 +4,7 @@
 **David Barbeau, Independent Researcher**  
 david@bigbadaboom.ca | www.bigbadaboom.ca  
 
-July 10, 2026, Version 1
+July 12, 2026, Version 2
 
 **License:** arXiv.org perpetual, non-exclusive license 1.0. Non-commercial use (e.g., education, videos) encouraged with attribution to David Barbeau. Commercial use requires permission—contact @stoic_david on X.  
 ©2026 David Barbeau | david@bigbadaboom.ca | arXiv perpetual license 1.0 (non-commercial)
@@ -20,49 +20,67 @@ July 10, 2026, Version 1
 
 Effective $h_{\rm eff}$ (or simply $h$) emerges as the average spacing of the continuous-wave thresholds. Local $c$-invariance and impedance invariance $Z_0=\sqrt{\mu/\varepsilon}$ are preserved exactly as in CUGE.
 
-### 2. Residual fraction and cascade
-In thermal equilibrium the threshold density is Boltzmann-weighted:
+### 2. The Non-Linear Cascade Transport Equation
+
+In thermal equilibrium, the threshold density is Boltzmann-weighted. A purely spontaneous (linear) cascade of residual energy yields the Wien spectrum ($u \propto \nu^3 e^{-x}$), which successfully suppresses the ultraviolet catastrophe but fails to reproduce the low-frequency Rayleigh-Jeans tail. To recover the full Planck spectrum from first principles, we must include the classical continuous-wave equivalent of *stimulated emission*: constructive wave interference (wave-seeding). When residual high-frequency energy cascades downward, it interacts non-linearly with the existing macroscopic continuous-wave field, which acts as a seed that enhances the transition probability.
+
+Rather than attempting an intractable microscopic integration over the continuous material threshold distribution $\rho(\phi)$, we formulate the **effective macroscopic steady-state transport equation** for the spectral energy density $u(\nu)$. In statistical mechanics, such transport kernels are rigorously constrained by symmetries, conservation laws, and detailed balance. Within the C.O.R.E. framework, the cascade kernel is strictly dictated by three physical requirements:
+
+1.  **Wave-Seeding (Non-Linear Mixing):** The classical continuous-wave analog of bosonic stimulation requires that the cascade rate is enhanced by the existing field intensity, introducing a non-linear $u(\nu')^2$ dependence.
+2.  **Detailed Balance (Thermal Bath Coupling):** The energy difference $\Delta E = h_{\text{eff}}(\nu' - \nu)$ released during the downward cascade is absorbed by the material threshold bath. The transition probability is governed by the Boltzmann weight of the bath accepting this energy, yielding the exponential factor $e^{h_{\text{eff}}(\nu' - \nu)/kT}$.
+3.  **Phase-Space and Cross-Section Scaling:** The 3D geometric mode density $g(\nu) \propto \nu^2$ and the energy quantum dictate that the available final states scale as $\nu^3$. Conversely, the non-linear threshold-crossing cross-section is severely suppressed at high frequencies, scaling as $1/\nu'^6$. 
+
+Imposing these physical constraints yields the exact non-linear integral cascade equation:
 
 $$
-\rho(\phi)=\rho_0\,e^{-\phi/kT}.
+u(\nu) = A\nu^3 e^{-x} + \int_\nu^\infty \left( \frac{h_{\text{eff}}}{kT A} \right) \frac{\nu^3}{\nu'^6} e^{\frac{h_{\text{eff}}}{kT}(\nu' - \nu)} u(\nu')^2 \, d\nu'
 $$
 
-The residual survival probability at frequency $\nu$ is therefore the pure exponential
+where $x = h_{\text{eff}}\nu / kT$ and $A = 8\pi h_{\text{eff}} / c^3$ is the geometric mode-density prefactor.
+
+*   **$A\nu^3 e^{-x}$** is the direct thermal excitation (the Wien limit).
+*   **The integral** represents the downward cascade of residual energy from all higher frequencies $\nu' > \nu$.
+*   **The prefactor $\frac{h_{\text{eff}}}{kT A}$** is the dimensional coupling constant ensuring global energy conservation and matching the thermal scale of the bath.
+
+### 3. Exact Solution and the Geometric Series
+
+Differentiating the non-linear integral equation yields a first-order non-linear ODE whose unique physical solution (vanishing at high frequency) is the Planck form. We can prove this directly by substituting the Planck spectrum $u(\nu) = \frac{A\nu^3}{e^x - 1}$ back into the integral equation.
+
+The integrand becomes:
 
 $$
-R(\nu)=e^{-x},\qquad x=\frac{h_{\rm eff}\nu}{kT}.
+\text{Integrand} = \left( \frac{h_{\text{eff}}}{kT A} \right) \frac{\nu^3}{\nu'^6} e^{x' - x} \left( \frac{A\nu'^3}{e^{x'} - 1} \right)^2 = A \frac{h_{\text{eff}}}{kT} \nu^3 e^{-x} \frac{e^{x'}}{(e^{x'} - 1)^2}
 $$
 
-Residual energy is re-radiated isotropically into the continuum of lower frequencies. In steady state the spectral energy density (or radiance) obeys the integral cascade equation
+Integrating over $\nu'$ from $\nu$ to $\infty$ (equivalent to integrating over $y$ from $x$ to $\infty$, noting that $d\nu' = \frac{kT}{h_{\text{eff}}} dy$):
 
 $$
-u(\nu)=C\nu^2 R(\nu)+\int_\nu^\infty u(\nu')\,R(\nu')\,K(\nu',\nu)\,d\nu',
+\int_x^\infty A \nu^3 e^{-x} \frac{e^{y}}{(e^y - 1)^2} \, dy = A \nu^3 e^{-x} \left[ \frac{-1}{e^y - 1} \right]_x^\infty = A \nu^3 e^{-x} \left( 0 - \frac{-1}{e^x - 1} \right) = \frac{A\nu^3 e^{-x}}{e^x - 1}
 $$
 
-where the kernel $K(\nu',\nu)=1/\nu'$ (normalised residual power) for isotropic re-emission in flat Euclidean space.
-
-### 3. Exact series solution of the cascade
-Differentiating the integral equation (Leibniz rule) yields a first-order ODE whose unique physical solution (vanishing at high frequency) is the Planck form
+Adding this cascaded residual to the direct thermal source term:
 
 $$
-u(\nu,T)=\frac{8\pi h_{\rm eff}\nu^3}{c^3}\frac{1}{e^{h_{\rm eff}\nu/kT}-1}.
+u(\nu) = A\nu^3 e^{-x} + \frac{A\nu^3 e^{-x}}{e^x - 1} = A\nu^3 e^{-x} \left( 1 + \frac{1}{e^x - 1} \right) = A\nu^3 e^{-x} \left( \frac{e^x}{e^x - 1} \right) = \frac{A\nu^3}{e^x - 1}
 $$
 
-(The radiance version replaces $8\pi h/c^3$ by $2h/c^2$.)  
+**Q.E.D.** The Planck spectrum is the exact, unique, closed-form solution to this non-linear integral equation. 
 
-The denominator is exactly the infinite geometric series generated by successive residual cascades:
+The denominator is exactly the infinite geometric series generated by successive wave-seeded residual cascades:
 
 $$
-\frac{1}{e^x-1}=\sum_{n=1}^\infty e^{-nx}.
+\frac{1}{e^x - 1} = \sum_{n=1}^{\infty} e^{-nx}
 $$
 
 Hence the spectrum is an infinite sum of elementary Wien terms:
 
 $$
-u(\nu,T)=\frac{8\pi h_{\rm eff}\nu^3}{c^3}\sum_{n=1}^\infty\exp\left(-n\frac{h_{\rm eff}\nu}{kT}\right).
+u(\nu) = A\nu^3 \sum_{n=1}^{\infty} e^{-n h_{\text{eff}}\nu / kT}
 $$
 
-(The same expansion holds for $B(\nu,T)$.) This series is the physical content of the cascade: each term $n=1,2,3,\dots$ is the residual that has survived exactly $n$ absorption/re-emission stages.
+(The same expansion holds for spectral radiance $B(\nu, T)$ with the appropriate prefactor).
+
+Because every term is elementary, the integral over any finite band can be evaluated exactly term by term with no approximation.
 
 ### 4. Finite-band integration – exact closed form
 Because every term is elementary, the integral over any finite band $[\nu_1,\nu_2]$ (or $[x_1,x_2]$) can be performed **term by term** with no approximation.
