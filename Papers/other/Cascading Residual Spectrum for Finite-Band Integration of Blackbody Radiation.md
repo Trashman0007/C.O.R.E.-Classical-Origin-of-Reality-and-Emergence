@@ -11,6 +11,12 @@ July 12, 2026, Version 2
 
 ---
 
+**Abstract**
+
+Max Planck’s 1900 derivation of blackbody radiation introduced energy quanta as a formal mathematical necessity but left the underlying ontology of light unresolved. For over a century, mainstream physics abandoned classical continuous waves in favor of photon statistics to explain quantization and avoid the ultraviolet catastrophe. This paper completes Planck’s original vision by deriving the exact Planck spectrum from first principles within a strictly classical framework: flat Euclidean 3-space, continuous electromagnetic waves, and material oscillators possessing a continuum of energy thresholds $\rho(\phi)$. 
+
+We introduce the concept of **"cascading residuals,"** where wave energy failing to meet a material threshold is re-radiated at lower frequencies, creating a downward spectral cascade. By incorporating a non-linear **"wave-seeding"** mixing term that mimics stimulated emission through constructive interference, we formulate an exact non-linear integral transport equation for spectral energy density. The Planck distribution emerges as the unique steady-state solution to this equation, expressed as an infinite geometric series of elementary Wien terms. This derivation demonstrates that quantization is an emergent property of continuous wave interactions with material thresholds, rather than a fundamental attribute of light. Furthermore, we provide a rapidly converging closed-form analytical series for finite-band integration of blackbody radiation, offering a practical tool for spectrometer calibration and radiative transfer calculations without reliance on numerical quadrature or special functions.
+
 ### 1. Starting point (ASH postulates in flat Euclidean space)
 - Light is a continuous electromagnetic wave. Spectral energy density $u(\nu)\,d\nu$ (J m⁻³ Hz⁻¹) or spectral radiance $B(\nu,T)$ (W m⁻² Hz⁻¹ sr⁻¹).
 - Material detectors (or cavity walls) possess a continuum of energy thresholds $\phi$. Density of thresholds: $\rho(\phi)$.
@@ -170,6 +176,21 @@ This simultaneously:
 **The ultraviolet catastrophe is avoided because high-frequency energy is almost entirely residual and is forced to cascade downward; the finite-band integral is the truncated geometric series of those residuals.**
 
 (The identical cascade applied to the cosmic VSS energy reservoir of ZEUS recovers the observed CMB blackbody spectrum and temperature without expansion.)
+
+### 9. Historical Context and Completion of Planck’s Work
+
+Max Planck’s derivation of blackbody radiation in 1900 is widely regarded as the birth of quantum mechanics, yet it was born from a deep ontological conflict that Planck himself struggled to resolve for over a decade. In his famous paper, Planck arrived at the correct spectral formula by mathematically interpolating between Wien’s law (valid at high frequencies) and the Rayleigh-Jeans law (valid at low frequencies). To make this work formally, he introduced the radical assumption that material oscillators could only exchange energy in discrete units of $E = nh\nu$. 
+
+However, Planck did not believe light itself was quantized. He viewed electromagnetic radiation as a continuous classical wave and assumed that "quantization" applied strictly to the matter (the cavity walls). For years following 1900, Planck actively resisted Albert Einstein’s 1905 proposal of light quanta (photons), spending considerable effort attempting to derive his own formula using purely classical physics. His failure was not due to a lack of mathematical skill, but because he lacked the necessary dynamical mechanism: he assumed material oscillators were simple harmonic resonators subject to equipartition, rather than possessing a continuum of energy thresholds interacting with continuous waves via cascading residuals.
+
+The C.O.R.E. framework now completes Planck’s original vision by providing exactly this missing physical mechanism. By shifting the ontology to one where **light remains a continuous wave** and quantization emerges from **material detectors/oscillators possessing a continuum of thresholds $\rho(\phi)$**, we can derive the exact Planck spectrum without ever invoking fundamental photons. 
+
+In this framework:
+*   The static mathematical rule $E = nh\nu$ is replaced by a dynamic process: continuous waves encounter material thresholds, and "residual" energy that fails to meet a threshold cascades downward in frequency until it does. 
+*   The integer $n$ in the resulting geometric series $\sum e^{-nx}$ no longer represents a count of fundamental particles, but rather successive steps of wave-seeded residual emission down through the energy spectrum.
+*   The ultraviolet catastrophe is avoided not because high-frequency photons are statistically unlikely to exist (as in standard quantum statistics), but because high-frequency continuous waves become residual and are forced to cascade downward until they meet a material threshold.
+
+By introducing the non-linear "wave-seeding" mixing term, this work finally provides the classical dynamical equivalent of stimulated emission that Planck sought for decades. It transforms Planck’s formal mathematical interpolation into a complete, dynamical theory where quantization is an emergent property of continuous waves interacting with matter—fulfilling Planck's own long-held hope that the blackbody spectrum could be derived without abandoning the classical concept of continuous electromagnetic fields.
 
 ---
 
