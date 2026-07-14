@@ -280,13 +280,13 @@ matching GR.
 
 Under acceleration, only the kinematic half exists—confirming that acceleration ≠ gravity.
 
-Local invariance of the measured speed of light \( c = 299\,792\,458~{\rm m~s^{-1}} \) is ensured by the co-variation of atomic clocks and rulers in the responsive vacuum, as derived in the updated CUGE framework (Section 2). According to the Atomic Statistical Hypothesis (ASH), the effective Planck constant is a material-dependent statistical average \( h_{\rm eff}(r) \) that scales linearly as \( h_{\rm eff}(r) \propto \varepsilon(r) \). Combined with the standard dielectric scaling of transition energies \( E \propto 1/\varepsilon(r)^2 \), this yields atomic frequencies \( \nu = E/h_{\rm eff} \propto 1/\varepsilon(r) \). Consequently the locally measured wavelength and frequency satisfy \( \lambda_{\rm meas} \propto \varepsilon(r) \) and \( f_{\rm meas} \propto 1/\varepsilon(r) \), restoring
+Local invariance of the measured speed of light \(c = 299\,792\,458~{\rm m~s^{-1}}\) is ensured by the co-variation of atomic clocks and rulers in the responsive vacuum, as derived in the updated CUGE framework (Section 2). For internal atomic transitions (clocks and rulers), the universal bare Planck constant \(h\) applies — no effective scaling is required. Atomic transition energies scale as \(E \propto 1/\varepsilon(r)^2\), giving coordinate frequency \(\nu_{\rm coord} \propto 1/\varepsilon(r)^2\), while the Bohr radius (local ruler) scales as \(a_0(r) \propto \varepsilon(r)\). A local observer measures wavelength in their own ruler units and frequency with their own (locally slowed) clock: \(\lambda_{\rm meas} \propto \varepsilon(r)/\varepsilon(r) = \text{constant}\), and the local clock rate compensates \(\nu_{\rm coord}\) by a factor \(\propto \varepsilon(r)^2\), giving \(f_{\rm meas} = \text{constant}\). Consequently 
 
 \[
-c_{\rm local} = \lambda_{\rm meas} \cdot f_{\rm meas} \propto \varepsilon(r) \cdot \frac{1}{\varepsilon(r)} = c = \text{constant}. \tag{7.4}
+c_{\rm local} = \lambda_{\rm meas}\cdot f_{\rm meas} = c \tag{7.4}
 \]
 
-This is independent of gravitational potential and direction. This completes the physical mechanism behind the kinematic half-effect under acceleration and the full redshift under real gravity, all within the same refractive foundation.
+independent of gravitational potential or direction. This completes the physical mechanism behind the kinematic half-effect under acceleration and the full redshift under real gravity, all within the same refractive foundation.
 
 ---
 
