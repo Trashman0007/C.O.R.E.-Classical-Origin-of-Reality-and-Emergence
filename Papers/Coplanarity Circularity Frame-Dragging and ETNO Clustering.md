@@ -144,17 +144,31 @@ The same transverse drag term produces azimuthal advection of light rays, consis
 
 ## 3. Planet Formation — Coplanarity and Circularity from Vacuum Damping
 
-### 3.1 Impedance-Invariant Ray Equation in a Time-Dependent Potential
+### 3.1 Equation of Motion for Massive Bodies in a Time-Dependent Responsive Vacuum
 
 Protoplanetary disks form with net angular momentum from cloud collapse. The instantaneous refractive index is the superposition of the central star and all planetesimals:
 
-$$ n(\mathbf r,t)\approx 1+\frac{\Phi(\mathbf r,t)}{2c^2}. $$
+$$
+n(\mathbf{r},t)\approx 1+\frac{\Phi(\mathbf{r},t)}{2c^2}.
+$$
 
-Particle trajectories obey the ray equation
+Massive test particles do not obey the optical ray equation. Their trajectories are governed by the three-term equation of motion fixed by the CUGE constraints:
 
-$$ \ddot{\mathbf r}=\frac{c^2}{n}\nabla n-\frac{\dot n}{n}\mathbf v. $$
+$$
+\ddot{\mathbf{r}} = -\nabla\Phi + \mathbf{a}_{\rm PN}[\varepsilon,\mu] - \frac{\dot n}{n}\mathbf{v}.
+$$
 
-The second term is the velocity-dependent damping arising directly from impedance invariance.
+- The first term is the full Newtonian acceleration recovered by the effective-potential analysis of CUGE (orbital equation in $u=1/r$).  
+- The second term collects the post-Newtonian corrections that arise from the six symmetric contributions of clock/ruler co-scaling, $\varepsilon$-variation and $\mu$-variation; these already reproduce the observed perihelion advance.  
+- The third term is the velocity-dependent damping that appears when a moving mass continuously exchanges energy with the local Vacuum Shielding Stress. It follows directly from the local energy-balance identity
+
+$$
+\frac{\partial u_{\rm VSS}}{\partial t}+\nabla\cdot\mathbf{S}_{\rm vac}=-\mathbf{f}_{\rm drag}\cdot\mathbf{v},
+$$
+
+with $u_{\rm VSS}=|\nabla\Phi|^2/(8\pi G)$ and $\mathbf{S}_{\rm vac}=-\frac1{4\pi G}(\partial_t\Phi)\nabla\Phi$. Because $n=n(\Phi)$, any convective change $\dot n=\mathbf{v}\cdot\nabla n$ experienced by the particle produces a power that must be balanced by a drag force of precisely this form. The coefficient is fixed by impedance invariance; no free parameter is introduced.
+
+For an exactly circular, coplanar orbit in a static axisymmetric potential the convective derivative vanishes, $\dot n=0$, so the damping term is identically zero. The circular coplanar state is therefore an attractor of the dynamics, not a continuously braked orbit.
 
 ---
 
@@ -342,21 +356,27 @@ Gas drag remains important for early dust settling, but the final coplanarity an
 
 ## 4. ETNO Clustering from Velocity-Dependent Damping
 
-### 4.1 Ray Equation Applied to High-Semimajor-Axis Orbits
+### 4.1 Equation of Motion Applied to High-Semimajor-Axis Orbits
 
 Extreme trans-Neptunian objects, with
 
-$$ a\gtrsim 250\ \mathrm{AU}, $$
+$$
+a\gtrsim 250\,\mathrm{AU},
+$$
 
-move in the solar potential plus any residual vortical component inherited from the rotating inner system. Their motion obeys the same ray equation:
+move in the solar potential plus any residual vortical component inherited from the rotating inner system. Their motion obeys the same three-term equation of motion derived in §3.1:
 
-$$ \ddot{\mathbf r}=\frac{c^2}{n}\nabla n-\frac{\dot n}{n}\mathbf v. $$
+$$
+\ddot{\mathbf{r}} = -\nabla\Phi + \mathbf{a}_{\rm PN}[\varepsilon,\mu] - \frac{\dot n}{n}\mathbf{v}.
+$$
 
-The damping term
+The Newtonian and post-Newtonian pieces are identical to those already fixed by CUGE. The damping term
 
-$$ -\frac{\dot n}{n}\mathbf v $$
+$$
+-\frac{\dot n}{n}\mathbf{v}
+$$
 
-is evaluated along high-$a$ trajectories where $v$ is small but the integration time is Gyr.
+is evaluated along high-$a$ trajectories where the speed $v$ is small but the available integration time is of order the age of the Solar System. Secular averaging of this term produces the apsidal torque, eccentricity decay and inclination decay calculated in Appendix C. No distant shepherd mass and no additional free parameters are required.
 
 ---
 
@@ -570,7 +590,7 @@ $$
 
 ### C.1 Starting point
 
-In a static potential the ray equation reduces to
+In a static potential the secular perturbation is governed by the damping term of the massive-body equation of motion. The Newtonian and post-Newtonian terms define the reference Keplerian orbit, while the dissipative perturbation is
 
 $$
 \ddot{\mathbf{r}} = \frac{c^{2}}{n}\nabla n - \frac{\dot{n}}{n}\mathbf{v}, \qquad \dot{n} = \mathbf{v}\cdot\nabla n.
